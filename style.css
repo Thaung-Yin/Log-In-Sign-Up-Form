@@ -1,0 +1,104 @@
+/* Assuming this is your style.css file */
+
+body {
+    font-family: Arial, sans-serif;
+   	background: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Building-night-light-city-images.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 300px;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 3px 0px 5px rgba(20, 15, 27, 0.68);
+     backdrop-filter: blur(100px);
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 10px 0;
+    color: whitesmoke;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Adjust this value to change the margin below the label */
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Adjust this value to change the margin below the input field */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color:#7b6cb2e3;
+}
+
+.input-box input::placeholder{
+
+	color:#7b6cb2e3;
+
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+}
+
+.remember-forgot input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.forgot-password {
+    color: white;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #7b6cb2e3;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px ;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+}

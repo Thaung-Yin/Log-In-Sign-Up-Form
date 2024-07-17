@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Building-night-light-city-images.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+   width: 100%;
+    max-width: 500px;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 3px 0px 5px rgba(20, 15, 27, 0.68);
+     backdrop-filter: blur(100px);
+     color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    padding: 10px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box.horizontal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px; /* Space between horizontal input groups */
+}
+
+.input-group:last-child {
+    margin-right: 0; /* Remove right margin for the last input group */
+}
+
+.input-group label,
+.input-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-box input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.input-box input[type="text"],
+.input-box input[type="password"],
+.input-box input[type="email"] {
+    width: 100%;
+}
+
+.input-box input::placeholder{
+
+    color:#7b6cb2e3;
+
+}
+
+.terms {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    font-size: 12px; /* Increased font size */
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.terms a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #7b6cb2e3;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#submit:hover {
+    background-color: #6a5bb5;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .input-box.horizontal {
+        flex-direction: column;
+    }
+
+    .input-box input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
